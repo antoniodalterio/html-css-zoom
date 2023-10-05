@@ -101,51 +101,68 @@ FOOTER
 ******** 
  */
 
-
 footer.flex {
     margin-top: 20px;
     height: 70px;
     background-color: #222222;
     justify-content: space-between;
+}
+
+.box-mid {
+    width: 60%;
+    height: 70px;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.box1 {
+    height: 70px;
+    width: 20%;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.box2 {
+    height: 70px;
+    width: 20%;
+    text-align: right;
+    justify-content: center;
     align-items: center;
 }
 
-footer section.flex .opzioni {
-    margin-left: 10px;
-}
-
-
-
-.comandi {
-    margin-bottom: 5px;
+footer .cam-mic,
+.icon {
     text-align: center;
 }
 
-div.comandi .arrow-up {
-    margin-left: 20px;
-    font-size: 10px;
-    vertical-align: bottom;
+.cam-mic div,
+.icon div {
+    margin-top: 5px;
+    font-size: 14px;
 }
 
-.opzioni {
-    margin-right: 15px;
+.btn,
+.btn-sharesc {
+    font-size: 25px;
+    color: white;
 }
 
-.icon {
-    font-size: 20px;
+.btn-sharesc {
+    color: #4bc800;
 }
 
-.middleicon {
-    color: rgb(80, 133, 0);
-}
-
-.text {
-    font-size: 13px;
-}
-
-.call-end {
-    padding: 25px;
+.btn-call {
     background-color: #4a4a4a;
+    width: 120px;
+    height: 70px;
+    font-size: 12px;
     color: red;
+    font-weight: bold;
+}
 
+footer .text {
+    font-size: 12px;
 }
