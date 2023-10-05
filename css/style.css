@@ -10,10 +10,10 @@ RESET
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-    font-size: 14px;
-    color: white;
+button {
+    background-color: #00000000;
+    border: 0;
+    color: none;
 }
 
 /*
@@ -22,11 +22,21 @@ COMMON
 ******** 
  */
 
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+}
+
 .container .box-cam,
 .container img {
     width: 245px;
     height: 145px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 
@@ -59,7 +69,7 @@ MAIN
  */
 
 main {
-    padding: 0 60px;
+    padding: 0 px;
 }
 
 .container {
@@ -68,9 +78,8 @@ main {
     /* todo: debug */
     justify-content: center;
     gap: 10px;
-    height: calc(100vh - 155px);
+    height: calc(100vh - 165px);
     overflow-y: scroll;
-
 }
 
 .container .box-cam {
@@ -84,7 +93,6 @@ main {
     bottom: 0;
     padding: 5px;
     background-color: #0000007e;
-    font-size: 14px;
 }
 
 /*
@@ -94,6 +102,50 @@ FOOTER
  */
 
 
-footer {
-    height: 0px;
+footer.flex {
+    margin-top: 20px;
+    height: 70px;
+    background-color: #222222;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section.flex .opzioni {
+    margin-left: 10px;
+}
+
+
+
+.comandi {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+div.comandi .arrow-up {
+    margin-left: 20px;
+    font-size: 10px;
+    vertical-align: bottom;
+}
+
+.opzioni {
+    margin-right: 15px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.middleicon {
+    color: rgb(80, 133, 0);
+}
+
+.text {
+    font-size: 13px;
+}
+
+.call-end {
+    padding: 25px;
+    background-color: #4a4a4a;
+    color: red;
+
 }
